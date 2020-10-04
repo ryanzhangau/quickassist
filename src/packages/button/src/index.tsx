@@ -28,7 +28,6 @@ const AnctechButton: React.FC<ButtonProps> = ({
       disabled={disabled}
       {...props}
     >
-      {console.log(outline)}
       {label}
     </button>
   )

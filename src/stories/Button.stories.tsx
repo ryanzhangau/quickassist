@@ -19,7 +19,8 @@ export default {
         options: ['primary', 'secondary', 'success', 'danger', 'warning', 'info', 'light', 'dark']
       }
     },
-    disabled: { control: 'boolean' }
+    disabled: { control: 'boolean' },
+    onClick: { action: 'clicked' }
   }
 } as Meta
 
