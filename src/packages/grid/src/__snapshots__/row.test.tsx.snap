@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AnctechRow component should match <AnctechRow /> snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="row"
+  >
+    test
+  </div>
+</DocumentFragment>
+`;
