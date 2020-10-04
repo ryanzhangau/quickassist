@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AnctechCols component should match <AnctechCols /> snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="col"
+  >
+    test
+  </div>
+</DocumentFragment>
+`;

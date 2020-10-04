@@ -1,4 +1,9 @@
 import AnctechRow, { RowProps } from './row'
-
-export { AnctechRow }
-export type { RowProps }
+import AnctechCols, { ColsProps } from './col'
+export type ScreenSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'auto'
+export type VAlignment = 'start' | 'center' | 'end'
+export type IDictionary<T> = {
+  [k in ScreenSize]?: T
+}
+export { AnctechRow, AnctechCols }
+export type { RowProps, ColsProps }

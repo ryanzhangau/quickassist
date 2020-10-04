@@ -1,6 +1,7 @@
 import React from 'react'
 import { render } from '@testing-library/react'
-import AnctechRow, { generateClass, ColsForRow, Halign, VAlignment } from './row'
+import AnctechRow, { generateClass } from './row'
+import { VAlignment, IDictionary } from './index'
 
 describe('AnctechRow component', () => {
   it('should match <AnctechRow /> snapshot', () => {
@@ -9,12 +10,15 @@ describe('AnctechRow component', () => {
   })
 
   it('should generate cols per row class when colsPerRow is provided', () => {
-    const colsPerRow: ColsForRow = { xs: 3, lg: 4 }
+    const colsPerRow: IDictionary<number> = { xs: 3, lg: 4 }
     expect(generateClass({ colsPerRow })).toBe('row row-cols-xs-3 row-cols-lg-4')
   })
 
   it('should generate horizontal aligment class when hAlign is proived', () => {
-    const hAlign: Halign = { xs: 'start', lg: 'end' }
+    const hAlign: IDictionary<'start' | 'center' | 'end' | 'around' | 'between'> = {
+      xs: 'start',
+      lg: 'end'
+    }
     expect(generateClass({ hAlign })).toBe('row justify-content-xs-start justify-content-lg-end')
   })
 

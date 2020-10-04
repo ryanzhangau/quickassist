@@ -1,18 +1,10 @@
 import React from 'react'
-
-type ScreenSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl'
-type HAlignment = 'start' | 'center' | 'end' | 'around' | 'between'
-export type VAlignment = 'start' | 'center' | 'end'
-type IDictionary<T> = {
-  [k in ScreenSize]?: T
-}
-export type ColsForRow = IDictionary<number>
-export type Halign = IDictionary<HAlignment>
+import { ScreenSize, VAlignment, IDictionary } from './index'
 
 export interface RowProps {
-  colsPerRow?: ColsForRow
+  colsPerRow?: IDictionary<number>
   vAlign?: VAlignment
-  hAlign?: Halign
+  hAlign?: IDictionary<'start' | 'center' | 'end' | 'around' | 'between'>
 }
 
 export const generateClass = ({ colsPerRow, hAlign, vAlign }: RowProps): string => {
