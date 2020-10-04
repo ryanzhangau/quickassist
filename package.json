@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "test": "react-scripts test --watchAll=false --verbose",
+    "test": "react-scripts test --watchAll=false --coverage --verbose",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public"
   },
@@ -33,7 +33,6 @@
     "@testing-library/react": "^11.0.4",
     "@testing-library/user-event": "^12.1.7",
     "@types/jest": "^26.0.14",
-    "babel-loader": "^8.1.0",
     "prettier": "^2.1.2",
     "react-is": "^16.13.1"
   },
