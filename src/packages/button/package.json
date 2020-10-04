@@ -1,6 +1,6 @@
 {
   "name": "@anctech/button",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "ReactJs button styled by Bootstrap",
   "author": "Ryan Zhang <ryanzhangau@gmail.com>",
   "repository": {
@@ -8,7 +8,7 @@
     "url": "git+https://github.com/ryanzhangau/quickassist.git",
     "directory": "packages/button"
   },
-  "homepage": "https://github.com/ryanzhangau/quickassist#readme",
+  "homepage": "https://ryanzhangau.github.io/",
   "main": "dist/index.js",
   "bin": "dist/index.js",
   "files": [
