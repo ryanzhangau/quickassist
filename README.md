@@ -1,44 +1,35 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Quick Assist library is a collection of Bootstrap styled React components. It aims boost web APP development speed.
 
 ## Available Scripts
 
-In the project directory, you can run:
+#### `yarn test`
 
-### `yarn start`
+Launches the test runner in the interactive watch mode.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+#### `yarn stoybook`
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Lanuches the storybook locally for development
 
-### `yarn test`
+#### `yarn build-storybook`
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Creates static storybook files
 
-### `yarn build`
+**NOTE:** Static storybook files are requried to push to _ryanzhanagau.github.io_, each time run build story command
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Publish Packages
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+```
+  $ cd packages/<packageName>
+  $ npm publish --access public
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**NOTE:** Make sure the package.json version is bumped up for code update.
+Package name should be start with `@anctech` to make sure the package goes into _Anctech_ org.
 
-### `yarn eject`
+## How to Use
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+`yarn add bootstrap` to install bootstrap package
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+`yarn add @anctech/<packageName>` to install paticular package
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Then follow the component API
